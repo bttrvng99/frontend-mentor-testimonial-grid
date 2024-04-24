@@ -28,14 +28,14 @@ main {
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   column-gap: 2rem;
-  max-width: 1050px;
+  max-width: 1025px;
 }
 
 .card {
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: var(--White);
-  box-shadow: 2rem 2rem 5rem var(--LightGray);
+  box-shadow: 2rem 2rem 4rem var(--LightGray);
   border: 0 solid white;
 }
 
@@ -83,6 +83,9 @@ hoặc: <hàng bắt dầu> / <cột bắt đầu> / span <độ dài hàng> / s
   background-color: var(--ModerateViolet);
   color: var(--White);
   grid-area: 1 / 1 / 2 / 3;
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: right 90px top 0;
 }
 
 .card:nth-child(2) {
@@ -113,6 +116,14 @@ hoặc: <hàng bắt dầu> / <cột bắt đầu> / span <độ dài hàng> / s
   main {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0.5rem;
+    margin: 2.5rem 0.5rem;
+  }
+
+  .card {
+    max-width: 240px;
+  }
+
+  .card:first-child {
+    background-position: right 30px top 0;
   }
 }
